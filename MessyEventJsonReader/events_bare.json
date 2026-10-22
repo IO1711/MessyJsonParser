@@ -1,0 +1,115 @@
+[
+  {
+    "uid": "b01",
+    "summary": "Morning Spin Class",
+    "start": "2024-06-18T06:30:00Z",
+    "duration": "1h",
+    "location": { "name": "FitZone Gym", "room": "Studio 2", "geo": { "lat": 41.2995, "lng": 69.2401 } },
+    "attendees": ["kate@example.com"]
+  },
+  {
+    "uid": "b02",
+    "name": "Date-only Event",
+    "start": "2024-06-18",
+    "duration": 120
+  },
+  {
+    "uid": "b03",
+    "title": "Weird Date Format",
+    "start": "18/06/2024 14:00",
+    "duration": 30
+  },
+  {
+    "uid": "b04",
+    "title": "Boolean Start",
+    "start": true,
+    "duration": 30
+  },
+  {
+    "uid": "b05",
+    "title": "Bad Duration String",
+    "start": "2024-06-19T09:00:00Z",
+    "duration": "abc"
+  },
+  {
+    "uid": "b06",
+    "title": "Zero Duration",
+    "start": "2024-06-19T10:00:00Z",
+    "duration": 0
+  },
+  {
+    "uid": "b07",
+    "title": "Explicit End Only",
+    "start": "2024-06-19T11:00:00Z",
+    "end": "2024-06-19T12:15:00Z"
+  },
+  {
+    "uid": "b08",
+    "title": "End Present But Null",
+    "start": "2024-06-19T13:00:00Z",
+    "end": null,
+    "duration": 45
+  },
+  {
+    "uid": "b09",
+    "end": "2024-06-19T17:00:00Z",
+    "title": "End But No Start"
+  },
+  [],
+  false,
+  {
+    "uid": "b12",
+    "title": "Location As Number",
+    "start": "2024-06-20T09:00:00Z",
+    "duration": 60,
+    "location": 404
+  },
+  {
+    "uid": "b13",
+    "title": "Location Array",
+    "start": "2024-06-20T10:00:00Z",
+    "duration": 60,
+    "location": ["Room A", "Room B"]
+  },
+  {
+    "uid": "b14",
+    "title": "Empty Attendees Variants",
+    "start": "2024-06-20T11:00:00Z",
+    "duration": 60,
+    "attendees": []
+  },
+  {
+    "uid": "b15",
+    "title": "Attendees Empty String",
+    "start": "2024-06-20T12:00:00Z",
+    "duration": 60,
+    "attendees": ""
+  },
+  {
+    "uid": "b16",
+    "title": "Conference Day 1",
+    "start": 1718700000,
+    "duration": "2h15m",
+    "location": { "name": "Congress Hall", "room": "", "geo": null },
+    "extra": { "track": "iOS", "sponsor": null, "badge": "gold" },
+    "recurrence": {
+      "freq": "daily",
+      "until": "not-a-date",
+      "exceptions": [null, "2024-06-22T00:00:00Z"]
+    }
+  },
+  {
+    "uid": "b17",
+    "title": "Nested Weirdness",
+    "start": { "iso": "2024-06-21T10:00:00Z" },
+    "duration": { "minutes": 30 }
+  },
+  {
+    "uid": "b18",
+    "title": "Everything Fine",
+    "start": "2024-06-21T15:00:00Z",
+    "duration": 50,
+    "location": "Cafe Central",
+    "attendees": ["leo@example.com", "mia@example.com"]
+  }
+]

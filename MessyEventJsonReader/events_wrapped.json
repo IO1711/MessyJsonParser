@@ -1,0 +1,173 @@
+{
+  "version": "2.3-beta",
+  "exportedBy": "CalSync Legacy Exporter",
+  "events": [
+    {
+      "id": "w01",
+      "title": "Opening Keynote",
+      "start": "2024-06-10T09:00:00Z",
+      "duration": 60,
+      "location": "Main Hall",
+      "attendees": ["alice@example.com", "bob@example.com"]
+    },
+    {
+      "id": "w02",
+      "title": "Swift Concurrency Workshop",
+      "start": 1718000000,
+      "duration": "1h30m",
+      "location": {
+        "name": "Tech Center",
+        "room": "B-204",
+        "geo": { "lat": 41.3111, "lng": 69.2797 }
+      },
+      "attendees": [
+        { "name": "Carol", "email": "carol@example.com" },
+        { "name": "Dave" }
+      ]
+    },
+    {
+      "id": "w03",
+      "title": "Lunch & Learn",
+      "start": "1718100000",
+      "duration": "90",
+      "location": {},
+      "attendees": [
+        { "email": "erin@example.com" },
+        { "name": "Frank", "email": null },
+        {}
+      ]
+    },
+    {
+      "id": "w04",
+      "title": "Ghost Meeting (null start)",
+      "start": null,
+      "duration": 30,
+      "location": "Room 1"
+    },
+    {
+      "id": "w05",
+      "title": "Ghost Meeting (missing start)",
+      "duration": 30,
+      "location": "Room 2"
+    },
+    {
+      "id": "w06",
+      "name": "Yoga Session",
+      "start": "2024-06-11T07:30:00+05:00",
+      "duration": -5,
+      "location": null,
+      "attendees": null
+    },
+    {
+      "id": "w07",
+      "summary": "Team Standup",
+      "start": "2024-06-11T10:00:00+05:00",
+      "duration": 15,
+      "location": "Zoom",
+      "attendees": "grace@example.com"
+    },
+    {
+      "id": "w08",
+      "title": "   ",
+      "name": "Fallback Name Event",
+      "start": "2024-06-12T14:00:00Z",
+      "duration": 45
+    },
+    {
+      "id": "w09",
+      "title": "\t \n",
+      "start": "2024-06-12T15:00:00Z",
+      "duration": 45
+    },
+    42,
+    "this is not an event",
+    null,
+    {
+      "id": "w13",
+      "title": "Weekly Retro",
+      "start": "2024-06-13T16:00:00Z",
+      "duration": 60,
+      "location": { "name": "Office", "room": "3F" },
+      "recurrence": {
+        "freq": "weekly",
+        "until": "2024-09-01T00:00:00Z",
+        "exceptions": [
+          "2024-06-20T16:00:00Z",
+          null,
+          "2024-06-27T16:00:00Z",
+          null
+        ]
+      }
+    },
+    {
+      "id": "w14",
+      "title": "Monthly Review",
+      "start": "2024-06-14T11:00:00Z",
+      "duration": 90,
+      "recurrence": {
+        "freq": "monthly",
+        "exceptions": []
+      }
+    },
+    {
+      "id": "w15",
+      "title": "Product Demo",
+      "start": "2024-06-14T13:00:00Z",
+      "duration": 30,
+      "extra": {
+        "color": "red",
+        "notes": null,
+        "room_setup": "theatre"
+      }
+    },
+    {
+      "id": "w16",
+      "title": "Time Traveller Talk",
+      "start": "2024-06-15T12:00:00Z",
+      "end": "2024-06-15T09:00:00Z"
+    },
+    {
+      "id": "w17",
+      "title": "Short Sprint Planning",
+      "start": "2024-06-15T08:00:00Z",
+      "duration": "2h"
+    },
+    {
+      "id": "w18",
+      "title": "Quick Sync",
+      "start": "2024-06-15T08:30:00Z",
+      "duration": "45m",
+      "location": { "room": "Phone Booth" }
+    },
+    {
+      "id": "w19",
+      "title": "Field Trip",
+      "start": "2024-06-16T09:00:00Z",
+      "duration": 240,
+      "location": {
+        "name": "Chorsu Bazaar",
+        "geo": { "lat": "41.3262", "lng": "69.2361" }
+      }
+    },
+    {
+      "id": "w20",
+      "title": "Fractional Timestamp Event",
+      "start": 1718200000.5,
+      "duration": 20.5
+    },
+    {
+      "id": "w21",
+      "title": "Mixed Attendee Soup",
+      "start": "2024-06-17T10:00:00Z",
+      "duration": 60,
+      "attendees": [
+        "henry@example.com",
+        { "email": "ivy@example.com" },
+        null,
+        42,
+        { "name": "Jack" }
+      ]
+    },
+    {}
+  ]
+}
