@@ -6,14 +6,16 @@ struct ContentView: View {
     @State var allEvents: AllEvents?
     
     var body: some View {
-        
-        ScrollView {
-            ForEach(allEvents?.events ?? [], id: \.?.identifier) { event in
-                EventCardView(event: event)
+        NavigationStack{
+            ScrollView {
+                ForEach(allEvents?.events ?? [], id: \.?.identifier) { event in
+                    EventCardView(event: event)
+                }
             }
-        }
-        .onAppear{
-            allEvents = readJSON("events_wrapped")
+            .navigationTitle("Events")
+            .onAppear{
+                allEvents = readJSON("events_wrapped")
+            }
         }
         
         /*Text("Hello, world!")
